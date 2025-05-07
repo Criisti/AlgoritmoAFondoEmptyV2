@@ -8,7 +8,11 @@ using namespace std;
 
 int length(string s)
 {
-   return 0;
+   int i =0;
+   while (s[i] != '\0') {
+      i++;
+   }
+   return i;
 }
 
 int charCount(string s,char c)

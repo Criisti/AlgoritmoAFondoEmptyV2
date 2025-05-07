@@ -17,6 +17,9 @@ using namespace std;
 
 int main()
 {
-   return 0;
+   string s= "hola";
+   cout<< "Hola"<<endl;
+   return length(s);
+
 }
 #endif
