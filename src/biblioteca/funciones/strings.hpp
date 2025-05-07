@@ -17,7 +17,13 @@ int length(string s)
 
 int charCount(string s,char c)
 {
-   return 0;
+   int cantCarac=0;
+   for(int i=0;i<length(s);i++) {
+      if(s[i]==c) {
+         cantCarac++;
+      }
+   }
+   return cantCarac;
 }
 
 string substring(string s,int d,int h)
