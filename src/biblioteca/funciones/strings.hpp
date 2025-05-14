@@ -28,22 +28,46 @@ int charCount(string s,char c)
 
 string substring(string s,int d,int h)
 {
-   return "";
+   string subC= "";
+
+   int i=d;
+   while (i<h){
+      subC += s[i];
+      i++;
+   }
+
+   return subC;
 }
 
 string substring(string s,int d) // ok
 {
-   return "";
+   string subC= "";
+
+   int i=d;
+   while (i< length(s)){
+      subC += s[i];
+      i++;
+   }
 }
 
 int indexOf(string s,char c) // ok
 {
-   return 0;
+   for (int i=0; i<length(s); i++){
+      if (s[i]== c){
+        return i;
+      }
+   }
+   return -1;
 }
 
 int indexOf(string s,char c,int offSet) // ok
 {
-   return 0;
+   for (int i=offSet; i<length(s); i++){
+      if (s[i]== c){
+        return i;
+      }
+   }
+   return -1;
 }
 
 int indexOf(string s,string toSearch) // ok
@@ -58,7 +82,12 @@ int indexOf(string s,string toSearch,int offset) // ok
 
 int lastIndexOf(string s,char c)
 {
-   return 0;
+     for (int i= length(s); i>=0; i--){
+      if (s[i]== c){
+        return i;
+      }
+   }
+   return -1;
 }
 
 int indexOfN(string s,char c,int n)
