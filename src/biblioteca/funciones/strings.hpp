@@ -277,7 +277,22 @@ int cmpString(string a,string b)
 
 int cmpDouble(double a,double b)
 {
-   return 0;
+      int aux=0;
+   int i=0;
+   while (i<= length(s)){
+      if (n== 0){
+         return -1;
+      }else {
+         if (s[i]== c){
+            aux ++;
+            if (aux == n){
+               return i;
+            }
+         }
+      }
+   }
+   
+  if (aux)
 }
 
 #endif
